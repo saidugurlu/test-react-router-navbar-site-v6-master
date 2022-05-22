@@ -7,7 +7,10 @@ export const PageWelcome = () => {
 		<div className="page_welcome">
 			<h2>Welcome</h2>
 			<p>Welcome to this site.</p>
-			<p>Message : {message}</p>
+			<p>Status : {message}</p>
+			<p>
+				{message === "online" && "Available for chat" }
+			</p>
 			<button
 				onClick={() =>
 					setMessage(message === 'online' ? 'offline' : 'online')
